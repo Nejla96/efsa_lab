@@ -6,15 +6,79 @@
 <img src="/ART.png"  width="130" />
 <img src="/palette.png"  width="130" />
 
+<div class="row block-head visible-xs timelinePicker" ng-click="timelineShow = !timelineShow">
+<div class="col-xs-8 now">
+ponedjeljak, 14.05.2018. </div>
+<div class="col-xs-3 text-right"></div>
+<div class="col-xs-1 text-right">
+<div class="timelineArrow">
+<i class="icon_chevron_dole"></i>
+
+</div>
+</div>
+</div>
+
+<form action="action_page.php">
+  <div class="imgcontainer">
+    
+  </div>
+  
+  
+
+  <div class="container">
+  <p align="right">
+    <label for="uname"><b>Korisničko ime</b></label>
+    <input type="text" placeholder="" name="uname" required>
+
+    <label for="psw"><b>Lozinka</b></label>
+    <input type="password" placeholder="" name="psw" required>
+
+    <button type="submit">Prijavi se</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Zapamti me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  </p>
+  </div>
+
+</form>
+
 
 <hr>
+
 
 <div class="row">
 <div class="col-md-12">
+<div class="w3-content w3-section" style="max-width:1100">
+  <img class="mySlides" src="pan.jpg" style="width:110%">
+  <img class="mySlides" src="pan.jpg" style="width:110%">
+  <img class="mySlides" src="pan.jpg" style="width:110%">
+  
+</div>
 
-<img src="/pan.jpg"  width="1100" />
 
-</div> 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</div>
 </div>
 
 <br>
@@ -23,19 +87,20 @@
 <div class="row">
 <div class="col-md-4">
 
-<a href="<%= druga_path %>"> <img src="/cesma.png"  width="300" /></a>
+
+<a href="<%= druga_path %>" > <img style="border:10px outset silver;" src="/cesma.png"  width="300" /></a>
 
 </div>
 
 
 <div class="col-md-4">
 
-<a href="<%= treca_path %>" > <img src="/haso.jpeg"  width="310"  /></a>
+<a href="<%= treca_path %>" > <img style="border:10px outset silver;" src="/haso.jpeg"  width="310"  /></a>
 
 </div>
 
 <div class="col-md-4">
-<a href="<%= cetvrta_path %>" ><img src="/drvo.jpg"  width="335" /> </a>
+<a href="<%= cetvrta_path %>" ><img style="border:10px outset silver;" src="/drvo.jpg"  width="335" /> </a>
 </div>
 
 
@@ -44,7 +109,7 @@
 <br>
 
 <hr>
-
+<br>
 <div class="jumbotron">
 
 
@@ -58,3 +123,7 @@ softicart@hotmail.com &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &e
 
 
 <hr>
+
+
+
+
