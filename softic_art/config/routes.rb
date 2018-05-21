@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get '/druga' => 'pages#druga'
   get '/treca' => 'pages#treca'
   get '/cetvrta' => 'pages#cetvrta'
-  
-
+  get '/historija' => 'pages#historija'
+  get '/narudzba' => 'pages#narudzba'
+  get '/kontakt' => 'pages#kontakt'
 
 end
