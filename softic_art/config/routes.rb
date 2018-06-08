@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/historija' => 'pages#historija'
   get '/narudzba' => 'pages#narudzba'
   get '/kontakt' => 'pages#kontakt'
-
+  get '/registracija' => 'pages#registracija'
+  get '/potvrda' => 'pages#potvrda'
 end
